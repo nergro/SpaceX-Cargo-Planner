@@ -71,7 +71,7 @@ export const Main = ({ shipments, shipmentId }: Props) => {
       return setError("Please enter numbers separated by a comma.");
     }
     if (isNotInRange) {
-      return setError("Cargo must not weight more than 10");
+      return setError("Cargo box must not weight more than 10 units");
     }
 
     setError("");
