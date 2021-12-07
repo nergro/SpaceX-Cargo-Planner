@@ -1,0 +1,75 @@
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinnerBlock {
+  animation: spinner-animation 1200ms linear infinite;
+  transform-origin: center;
+  display: block;
+  height: 35px;
+  width: 35px;
+}
+
+.circle {
+  display: block;
+  border: 2px solid #ff1d5e;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.circle:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+.circle:nth-child(2) {
+  left: calc(35px * -0.36);
+  top: calc(35px * 0.2);
+}
+
+.circle:nth-child(3) {
+  left: calc(35px * -0.36);
+  top: calc(35px * -0.2);
+}
+
+.circle:nth-child(4) {
+  left: 0;
+  top: calc(35px * -0.36);
+}
+
+.circle:nth-child(5) {
+  left: calc(35px * 0.36);
+  top: calc(35px * -0.2);
+}
+
+.circle:nth-child(6) {
+  left: calc(35px * 0.36);
+  top: calc(35px * 0.2);
+}
+
+.circle:nth-child(7) {
+  left: 0;
+  top: calc(35px * 0.36);
+}
+
+@keyframes spinner-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

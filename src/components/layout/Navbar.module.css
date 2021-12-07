@@ -1,0 +1,41 @@
+.nav {
+  grid-area: navbar;
+  width: 100%;
+  max-width: 270px;
+  padding-right: 50px;
+  overflow: auto;
+}
+
+.navHeader {
+  font-weight: 400;
+  margin: 0 0 13px 0;
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 3px 0;
+  text-decoration: none;
+  color: var(--color-dusty-gray);
+}
+
+.linkActive {
+  background: linear-gradient(
+    90deg,
+    rgba(45, 48, 56, 0) 22.92%,
+    var(--color-gray) 100%
+  );
+  color: var(--color-white);
+}
+
+@media all and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}

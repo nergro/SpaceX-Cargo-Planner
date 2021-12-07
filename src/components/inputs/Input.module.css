@@ -1,0 +1,32 @@
+.inputContainer {
+  background: var(--color-white);
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: var(--color-black);
+}
+
+.input::placeholder {
+  color: var(--color-black);
+}
+
+.input:focus {
+  border: none;
+  outline: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}

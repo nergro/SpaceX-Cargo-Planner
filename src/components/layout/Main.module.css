@@ -1,0 +1,82 @@
+.main {
+  grid-area: main;
+  width: 100%;
+  background: linear-gradient(
+    124.01deg,
+    var(--color-gray) 0%,
+    rgba(45, 48, 56, 0) 100%
+  );
+  border-radius: 20px;
+  padding: 30px 50px;
+}
+
+.main p {
+  margin: 0;
+}
+
+.name {
+  font-size: 64px;
+  color: var(--color-white);
+}
+
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound p {
+  font-size: 40px;
+  color: var(--color-white);
+}
+
+.inputContainer {
+  margin-top: 30px;
+}
+
+.inputContainer .inputLabel {
+  margin-bottom: 10px;
+}
+
+.requiredBoxes {
+  margin-top: 30px;
+}
+
+.requiredBoxesLabel {
+  font-size: 34px;
+}
+
+.requiredBoxesNumber {
+  font-size: 56px;
+  color: var(--color-white);
+}
+
+.inputContainer .error {
+  color: var(--color-red);
+  margin-top: 10px;
+}
+
+.input {
+  height: 50px;
+  max-width: 320px;
+}
+
+@media all and (max-width: 768px) {
+  .name {
+    font-size: 28px;
+  }
+  .input {
+    height: 40px;
+  }
+  .requiredBoxes,
+  .notFound {
+    text-align: center;
+  }
+  .requiredBoxesLabel {
+    font-size: 18px;
+  }
+  .requiredBoxes .requiredBoxesNumber {
+    font-size: 34px;
+    margin-top: 10px;
+  }
+}
